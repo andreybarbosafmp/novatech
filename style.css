@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+nav {
+    background-color: #16213e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    perspective: 600px;
+}
+
+nav a {
+    color: white;
+    padding: 15px 25px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0f3460;
+    border-radius: 6px;
+    transition: transform 0.3s, background 0.3s;
+    transform-style: preserve-3d;
+}
+
+nav a:hover {
+    transform: rotateX(15deg) scale(1.05);
+    background-color: #e94560;
+}
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section h2 {
+    color: #0f3460;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    background-color: white;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature h3 {
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+.cta {
+    background-color: #0f3460;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.cta a {
+    background-color: #e94560;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-icons a {
+    color: white;
+    background-color: #25d366;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icons a.instagram {
+    background-color: #e1306c;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
